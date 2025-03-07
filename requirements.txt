@@ -1,0 +1,15 @@
+os
+apscheduler
+subprocess
+flask
+numpy
+PIL
+io
+tensorflow
+pandas
+numpy
+openmeteo_requests
+requests_cache
+retry_requests 
+datetime
+joblib
