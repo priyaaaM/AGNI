@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="flex justify-center items-center min-h-screen bg-yellow-100">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 p-4">
+        <!-- Camera Detection Card -->
+        <div class="bg-none rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-4">Drop image for wildfire Detection</h2>
+                <a href="{{ url_for('detect_camera') }}"
+                    class="block text-center bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition duration-300">
+                    Go to image Detection
+                </a>
+            </div>
+        </div>
+
+        <!-- Satellite Detection Card -->
+        <div class="bg-none rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-4">Satellite wildfire Detection</h2>
+                <a href="{{ url_for('detect_satellite') }}"
+                    class="block text-center bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition duration-300">
+                    Go to Satellite Detection
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
