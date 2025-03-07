@@ -3,7 +3,7 @@ Your Flask-based wildfire detection system uses satellite images, camera images,
 Install the requirement.txt file
 mapbox api is  used to obtain the get satallite data and visualisation 
 System interference
-![Screenshot](images\main page.png)
+![Screenshot](interface.png)
 
 For the full list of dependencies, see the [requirements.txt](requirements.txt) file.
 
